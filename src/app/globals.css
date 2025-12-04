@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
