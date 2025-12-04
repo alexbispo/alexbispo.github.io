@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 font-bold text-xl text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     <Terminal className="w-6 h-6" />
-                    <span>alexbispo</span>
+                    <span>alexBispo</span>
                 </Link>
                 <nav className="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-400">
                     <Link href="/" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
