@@ -10,10 +10,10 @@ export default function Header() {
                 </Link>
                 <nav className="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-400">
                     <Link href="/" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                        Blog
+                        Home
                     </Link>
-                    <Link href="/about" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                        Sobre Mim
+                    <Link href="/blog" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                        Blog
                     </Link>
                     <a href="https://github.com/alexbispo" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                         GitHub
