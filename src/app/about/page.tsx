@@ -13,20 +13,19 @@ export default function About() {
             </h1>
             <div className="prose prose-lg dark:prose-invert">
                 <p>
-                    Hello! I'm a software engineer passionate about building high-quality web applications.
-                    This blog is a place where I share my learnings, thoughts, and experiments with new technologies.
+                    Sou o Alex Bispo, engenheiro de software e especialista em dados. Sou de Embu das Artes, São Paulo, uma cidade conhecida por respirar arte e criatividade.
                 </p>
                 <p>
-                    I specialize in:
+                    Meu foco atual é no desenvolvimento de produtos de software "AI natives" rentáveis, escaláveis e seguros em produção. Atualmente, estou explorando arquiteturas que integram Engenharia de Software e Inteligência Artificial para resolver problemas complexos de negócio.
                 </p>
-                <ul>
-                    <li>React & Next.js</li>
-                    <li>TypeScript</li>
-                    <li>Node.js</li>
-                    <li>Cloud Architecture</li>
-                </ul>
                 <p>
-                    Feel free to reach out to me via <a href="https://github.com/alexbispo">GitHub</a>.
+                    Anteriormente, atuei como Arquiteto de Soluções e Tech Lead em grandes players como Itaú Unibanco e Banco do Brasil (pela Stefanini). No iFood, trabalhei no "core" de sistemas de alta performance, desenvolvendo microsserviços para detecção de fraude integrados a modelos de Machine Learning. Também tive a experiência enriquecedora de viver e trabalhar na Europa (Portugal) , desenvolvendo soluções globais para empresas como o Grupo M Contigo e Aubay.
+                </p>
+                <p>
+                    Concluí meu MBA em Data Science e Analytics na USP , uma jornada acadêmica que se somou aos meus mais de 10 anos de experiência prática com Engenharia de Software. Este blog é onde compartilho projetos, pensamentos e reflexões sobre aquilo que mais me interessa no momento.
+                </p>
+                <p>
+                    Estou ativo no <a href="https://linkedin.com/in/alex-bispo-de-oliveira-84152162">LinkedIn</a> e no <a href="https://github.com/alexbispo">GitHub</a>. Gosto de aprender sobre novos desafios técnicos e colaborar com times de alta performance. Entre em contato se quiser encontrar uma maneira de trabalharmos juntos!
                 </p>
             </div>
         </div>

@@ -9,10 +9,10 @@ export default function Home() {
     <div className="max-w-3xl mx-auto">
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl mb-4">
-          Welcome to DevBlog
+          Alex Bispo
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400">
-          Thoughts, stories, and ideas about software engineering.
+          projetos, pensamentos, reflexões, opiniões, ...
         </p>
       </div>
 
