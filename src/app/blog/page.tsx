@@ -12,9 +12,6 @@ export default function Blog() {
 
     return (
         <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl mb-8">
-                Blog
-            </h1>
             <div className="space-y-10">
                 {allPostsData.map((post) => (
                     <PostCard key={post.slug} post={post} />
