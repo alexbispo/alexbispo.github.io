@@ -21,10 +21,12 @@ export default function PostCard({ post }: { post: PostMetadata }) {
                 {post.description}
             </p>
             <div className="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-600 dark:text-blue-400">
-                Read article
-                <svg className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                </svg>
+                <Link href={`/blog/${post.slug}`} className="flex items-center hover:underline">
+                    Ler o artigo
+                    <svg className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                    </svg>
+                </Link>
             </div>
         </article>
     );
