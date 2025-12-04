@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // IMPORTANT: Change this to your repository name if deploying to GitHub Pages project site
-  // e.g. basePath: '/my-blog',
-  // basePath: '',
+  // basePath is not required for User/Organization Pages (e.g. username.github.io)
+  // It is only needed for Project Pages (e.g. username.github.io/repo-name)
   images: {
     unoptimized: true,
   },
