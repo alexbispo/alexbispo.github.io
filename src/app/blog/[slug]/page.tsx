@@ -1,4 +1,5 @@
 import { getAllPostSlugs, getPostData } from "@/lib/posts";
+import { format, parseISO } from "date-fns";
 import { Metadata } from "next";
 
 interface Props {
@@ -34,7 +35,7 @@ export default async function Post({ params }: Props) {
                     {postData.title}
                 </h1>
                 <time className="text-gray-500 dark:text-gray-400">
-                    {postData.date}
+                    {format(parseISO(postData.date), 'MMMM d, yyyy')}
                 </time>
             </header>
             <div
