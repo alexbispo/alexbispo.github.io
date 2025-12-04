@@ -5,6 +5,8 @@ export const metadata: Metadata = {
     description: "About me and this blog.",
 };
 
+import Image from "next/image";
+
 export default function About() {
     return (
         <div className="max-w-3xl mx-auto">
@@ -12,6 +14,16 @@ export default function About() {
                 Sobre Mim
             </h1>
             <div className="prose prose-lg dark:prose-invert">
+                <div className="float-right ml-6 mb-6">
+                    <Image
+                        src="/images/alexbispo.jpg"
+                        alt="Alex Bispo"
+                        width={200}
+                        height={200}
+                        className="rounded-full object-cover aspect-square border-4 border-gray-100 dark:border-gray-800 shadow-lg"
+                        priority
+                    />
+                </div>
                 <p>
                     Sou o Alex Bispo, engenheiro de software e especialista em dados. Sou de Embu das Artes, São Paulo, uma cidade conhecida por respirar arte e criatividade.
                 </p>
