@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Blog Walkthrough
 
-## Getting Started
+I have successfully created a minimalist personal blog using Next.js, TypeScript, and Tailwind CSS, configured for static export to GitHub Pages.
 
-First, run the development server:
+## Features Implemented
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Static Site Generation (SSG)**: Fully static output ready for GitHub Pages.
+- **Markdown Support**: Blog posts are written in Markdown with front-matter.
+- **Clean Design**: Minimalist aesthetic using Tailwind CSS and Typography plugin.
+- **Responsive**: Works on desktop and mobile.
+- **Dark Mode Support**: Uses system preference (via Tailwind `dark:` classes).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `content/posts/`: Directory for Markdown blog posts.
+- `src/app/`: App Router pages (`page.tsx`, `about/page.tsx`, `blog/[slug]/page.tsx`).
+- `src/components/`: Reusable UI components (`Header`, `Footer`, `PostCard`).
+- `src/lib/posts.ts`: Utilities for processing Markdown files.
+- `next.config.ts`: Configured with `output: 'export'` and `basePath` placeholder.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Add a New Post
 
-## Learn More
+1. Create a new `.md` file in `content/posts/`.
+2. Add front-matter at the top:
+   ```markdown
+   ---
+   title: "My New Post"
+   date: "2023-11-01"
+   description: "A short summary of the post."
+   ---
+   ```
+3. Write your content in Markdown.
+4. Run `npm run dev` to preview.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project includes a GitHub Actions workflow `.github/workflows/deploy.yml` that automatically deploys to GitHub Pages on push to `main`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> [!IMPORTANT]
+> **Configuration Required**: Before deploying, update `next.config.ts` if your repository is not at the root domain (e.g., `username.github.io/repo-name`). Uncomment and set the `basePath` property.
 
-## Deploy on Vercel
+## Verification
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I have verified the build locally using `npm run build`. The output is generated in the `out/` directory, containing static HTML files for all pages and posts.
